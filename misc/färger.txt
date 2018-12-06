@@ -1,0 +1,22 @@
+FF565F - röd
+
+
+
+
+filsystem
+
+
+
+site > index.html.erb
+controller.rb // i kontroller skriver man layout('layout.html.erb')
+
+man måste skriva stasis i cmd i mappen
+
+<%= yield %> inom yield kan man skriva ruby
+
+sass (.css.sass)
+till¨ter flera css filer
+
+@import
+
+gem install stasis
