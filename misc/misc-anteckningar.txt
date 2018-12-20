@@ -1,5 +1,6 @@
 FF565F - röd
 
+stasis -d 8080 för att starta stasis liveserver
 
 
 
