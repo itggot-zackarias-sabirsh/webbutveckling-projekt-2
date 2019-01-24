@@ -1,12 +1,12 @@
-function click(){
-    console.log("hej")
-    let lucka = document.querySelector(".lucka")
+function click(event){
+    // console.log(event.target.id)
+    let lucka = event.target
     lucka.classList.toggle("activate")
 
     if(lucka.classList.contains("activate")){
         lucka.innerHTML = "Innehåll"
     }else{
-        lucka.innerHTML = "<p>1</p>"
+        lucka.innerHTML = event.target.id
     }
 
 }
