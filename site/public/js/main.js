@@ -1,10 +1,19 @@
-function forward(event){
-    let forward = document.querySelector(".forward")
+function click(){
     console.log("hej")
-    forward.classList.toggle(".activate")
+    let lucka = document.querySelector(".lucka")
+    lucka.classList.toggle("activate")
+
+    if(lucka.classList.contains("activate")){
+        lucka.innerHTML = "Innehåll"
+    }else{
+        lucka.innerHTML = "<p>1</p>"
+    }
+
 }
 
-function back(event){
-    let back = document.querySelector(".back")
-    back.classList.toggle(".activate")
+function registerLucka(lucka){
+    lucka.addEventListener("click", click)
 }
+
+let luckor = document.querySelectorAll(".lucka")
+luckor.forEach( registerLucka )
